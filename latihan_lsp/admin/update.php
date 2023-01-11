@@ -56,6 +56,12 @@
                 <input type="text" name="penerbit" placeholder="Masukkan Penerbit" 
                 class="form-control" value="<?php echo $meledak ['penerbit']; ?>">
             </div>
+
+            <div class="form-group">
+                <label>Masukan Harga</label>
+                <input type="text" name="harga" placeholder="Masukkan Penerbit" 
+                class="form-control" value="<?php echo $meledak ['harga']; ?>">
+            </div>
             
             <button type="submit" class="btn btn-success">GASS</button>
             <button type="reset" class="btn btn-warning">LOM</button>

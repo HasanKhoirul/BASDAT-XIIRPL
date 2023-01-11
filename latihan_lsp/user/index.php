@@ -72,6 +72,7 @@
 
         </tbody>
         </table>
+        </center>
         </div>
         </div>
         </div>

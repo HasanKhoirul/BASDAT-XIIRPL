@@ -38,6 +38,11 @@
                 <label>Masukan penerbit</label>
                 <input type="text" name="penerbit" placeholder="Masukkan Penerbit" class="form-control">
             </div>
+
+            <div class="form-group">
+                <label>Masukan Harga</label>
+                <input type="nunber" name="harga" placeholder="Masukkan Harga" class="form-control">
+            </div>
             
             <button type="submit" class="btn btn-success">GASS</button>
             <button type="reset" class="btn btn-warning">LOM</button>

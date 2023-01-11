@@ -47,6 +47,7 @@
             <th>Pengarang</th>
             <th>Tahun Terbit</th>
             <th>Penerbit</th>
+            <th>harga</th>
             <th>Aksi</th>
         </tr>
 
@@ -62,6 +63,7 @@
             echo "<td>".$pengarang = $row['pengarang']."</td>";
             echo "<td>".$thn_terbit = $row['thn_terbit']."</td>";
             echo "<td>".$penerbit = $row['penerbit']."</td>";
+            echo "<td>".$harga = $row['harga']."</td>";
             ?>
             <td> 
             <a href="update.php?id_buku=<?php echo $row['id_buku'] ?>" class="btn btn-sm btn-primary">UPDATE</a>  
@@ -74,6 +76,18 @@
         
         </tbody>
         </table>
+            <!-- Menambah Data Harga Buku  -->
+            <center>
+            <h5> Total Harga Semua Buku : 
+            <?php 
+                $db = mysqli_query($koneksi, "SELECT * FROM buku;");
+                while ($r = mysqli_fetch_array($db)){
+                    $h[] = $r ['harga'];
+                }
+                $totalharga = array_sum($h);
+                echo "Rp. " . number_format($totalharga) . " ,-";
+            ?>
+            </h5>
         </div>
         </div>
         </div>
@@ -101,6 +115,7 @@
             <th>Alamat</th>
             <th>Email</th>
             <th>Password</th>
+            <th>Aksi</th>
         </tr>
 
         <!-- menampilkan data buku -->
