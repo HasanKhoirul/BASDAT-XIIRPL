@@ -37,10 +37,12 @@
             <!-- Login & Reset -->
             <button class="btn btn-outline-dark btn-lg px-5" type="submit">Login</button>
             <button class="btn btn-outline-dark btn-lg px-5" type="reset">Reset</button>
+            <br>
             
             <!-- Halaman Utama -->
             <div>
-                <p class="mb-0">Mau kembali kehalaman utama? <a href="../index.php" class="text-red-50 fw-bold">Klik Sini</a></p>
+                <h5 class="mb-0">Belum Punya Akun? <a href="daftar.php" class="text-red-50 fw-bold">Daftar Disini</a></h5>
+                <h6 class="mb-0">Mau kembali kehalaman utama? <a href="../index.php" class="text-blue-50 fw-bold">Klik Sini</a></h6>
             </div>
 
         </div>
